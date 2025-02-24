@@ -11,4 +11,4 @@
 
 ## Getting started
 
-* [Page 1](getting-started/page-1.md)
+* [Deployment](getting-started/deployment.md)
