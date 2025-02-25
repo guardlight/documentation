@@ -5,10 +5,17 @@
 ## design & Architecture
 
 * [System Overview](design-and-architecture/system-overview.md)
-* [Components](design-and-architecture/components/README.md)
-  * [UI](design-and-architecture/components/ui.md)
-  * [Control Plane](design-and-architecture/components/control-plane.md)
+* [Techstack overview](design-and-architecture/techstack-overview.md)
+
+***
+
+* [Job Scheduling and Orchestration](job-scheduling-and-orchestration.md)
 
 ## Getting started
 
 * [Deployment](getting-started/deployment.md)
+* [Extending Guardlight](getting-started/extending-guardlight.md)
+
+## User Interface
+
+* [Analysis Record Request](user-interface/analysis-record-request.md)

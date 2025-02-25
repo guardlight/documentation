@@ -1,4 +1,8 @@
 # System Overview
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+Guardlight is based on a modular design that can be extended and adapted to a specific need.
+
+
+
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="System High Overview Concept" class="gitbook-drawing">
 
