@@ -16,3 +16,11 @@
 
 * [Deployment](getting-started/deployment.md)
 * [Extending Guardlight](getting-started/extending-guardlight.md)
+
+## System Components
+
+* [Server](system-components/server/README.md)
+  * [Configuration](system-components/server/configuration.md)
+* [UI](system-components/ui.md)
+* [Parsers](system-components/parsers.md)
+* [Analyzers](system-components/analyzers.md)
