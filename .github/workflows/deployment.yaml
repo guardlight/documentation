@@ -37,9 +37,6 @@ jobs:
           npm install gitbook-cli
           npm install graceful-fs@latest
       
-      - name: Install GitBook plugins
-        run: gitbook install
-      
       - name: Build GitBook
         run: gitbook build ./ ./_book
       
