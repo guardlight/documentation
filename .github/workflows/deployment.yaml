@@ -7,14 +7,19 @@ on:
   
   workflow_dispatch:  # Allows manual triggering
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+        # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -28,7 +33,9 @@ jobs:
           node-version: 18
       
       - name: Install GitBook CLI
-        run: npm install -g gitbook-cli
+        run: | 
+          npm install gitbook-cli
+          npm install graceful-fs@latest
       
       - name: Install GitBook plugins
         run: gitbook install
@@ -37,8 +44,5 @@ jobs:
         run: gitbook build ./ ./_book
       
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages  # Deploy to this branch
-          folder: _book  # The build directory
-          clean: true  # Remove previous files before deployment
+        id: deployment
+        uses: actions/deploy-pages@v4
