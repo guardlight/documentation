@@ -6,10 +6,7 @@
 
 * [System Overview](design-and-architecture/system-overview.md)
 * [Techstack overview](design-and-architecture/techstack-overview.md)
-
-***
-
-* [Job Scheduling and Orchestration](job-scheduling-and-orchestration.md)
+* [Job Scheduling and Orchestration](design-and-architecture/job-scheduling-and-orchestration.md)
 
 ## Getting started
 
