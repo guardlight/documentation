@@ -8,11 +8,11 @@
 * [Techstack overview](design-and-architecture/techstack-overview.md)
 * [Job Scheduling and Orchestration](design-and-architecture/job-scheduling-and-orchestration.md)
 
+## User Interface
+
+* [Analysis Record Request](user-interface/analysis-record-request.md)
+
 ## Getting started
 
 * [Deployment](getting-started/deployment.md)
 * [Extending Guardlight](getting-started/extending-guardlight.md)
-
-## User Interface
-
-* [Analysis Record Request](user-interface/analysis-record-request.md)
