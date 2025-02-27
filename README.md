@@ -8,8 +8,6 @@ As a Christian, the type of content that I consume are important to me and my fa
 
 **Guardlight** was born out of that need to help my family make informed decisions about the media they consume and I know others do too. Guardlight is designed to do just that.
 
-
-
 ## How does it work?
 
 1. Upload your content (e.g., eBooks, movie script/screenplay or song lyrics)
@@ -26,4 +24,8 @@ Guardlight can analyze any written media and can detect specific words, phrases.
 * People who want to review content before consuming it, ensuring that it aligns with their values and preferences.&#x20;
 * Parents wanting to ensure that the content they want their children to consume align with their family's beliefs and standards.
 * Educators and researchers analyzing media for patterns, sentiment, or thematic elements
+
+## Responsible Disclosure <a href="#responsible-disclosure" id="responsible-disclosure"></a>
+
+Guardlight is completely open-source, and as such completely open to independent users and auditors to browse our code base and hunt for security issues. If you come across anything that raises red flags for you, please do not hesitate to reach out directly to `support@guardlight.org`. We ask that you please be responsible when disclosing any security concerns and _do not_ report them on our public facing bug tracker.
 
