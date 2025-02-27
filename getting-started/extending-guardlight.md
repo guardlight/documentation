@@ -8,7 +8,7 @@ Guardlight allows to be extended with more parsers and analyzers that communicat
 For an detailed explanation of how Guardlight uses NATS. Please see [Guardlight NATS usage](https://van-niekerk.gitbook.io/guardlight/system-components/server/nats-jetstream#guardlight-nats-usage).
 {% endhint %}
 
-When adding functionality via NATS, the added components communicate through 2 main topics. The `"request"` topic and `result` topic.
+When adding functionality via NATS, the added components communicate through 2 main topics. The `[component].[type]` topic and `[component].result` topic.
 
 For each type of added functionality, there is a subtopic and a topic for the specific component.&#x20;
 
