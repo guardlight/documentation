@@ -48,3 +48,18 @@ For a detailed explanation on the contract between an analyzer and Guardlight. P
 For a detailed explanation on adding a new analyzer to the config. Please see [Analyzer Config](https://van-niekerk.gitbook.io/guardlight/system-components/server/configuration#analyzer-config).
 {% endhint %}
 
+## Via Infrastructure Providers
+
+The only supported provider at the moment is the Docker provider.&#x20;
+
+There are plans to add extra infrastructure providers, but for the moment that is an far off plan.&#x20;
+
+### Why Infrastructure Providers
+
+Providers are the interface between Guardlight and the orchestrator infrastructure. For example, the Docker provider provides the interface between Guardlight and Docker to be able to create and spin up Parser and Analyzer containers in Docker. \
+But maybe, you want to spin up infrastucture on AWS of GCP for more powerful analyzers. But that is the future. But for now, you can create a "analyzer" that will orchestrate the AWS/GCP infrastructure and pass along the analyze request.
+
+### Docker Provider
+
+This is only supported and default provider for Guardlight.&#x20;
+
