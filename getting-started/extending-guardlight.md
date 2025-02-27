@@ -2,12 +2,10 @@
 
 Guardlight allows to be extended with more parsers and analyzers that communicate through the **NATS Jetstream**, following a common interface for parsing and analyzing. These configurations are added to the server configuration file.
 
-
-
 ## Via NATS Jetstream
 
 {% hint style="info" %}
-For an detailed explanation of how Guardlight uses NATS. Please see [Guardlight NATS usage](https://app.gitbook.com/o/PyrZEoN03Skr7eqKxVll/s/g7JDa4YuWhZbF9rXG784/~/changes/19/system-components/server/nats-jetstream#guardlight-nats-usage).
+For an detailed explanation of how Guardlight uses NATS. Please see [Guardlight NATS usage](https://van-niekerk.gitbook.io/guardlight/system-components/server/nats-jetstream#guardlight-nats-usage).
 {% endhint %}
 
 When adding functionality via NATS, the added components communicate through 2 main topics. The `"request"` topic and `result` topic.
