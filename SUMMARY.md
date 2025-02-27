@@ -1,6 +1,7 @@
 # Table of contents
 
 * [What is Guardlight?](README.md)
+* [About](about.md)
 
 ## design & Architecture
 
