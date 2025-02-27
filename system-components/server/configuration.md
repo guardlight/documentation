@@ -1,7 +1,7 @@
 # Configuration
 
 {% hint style="info" %}
-All config properties can be overridden by environment variables. Please see [Environment Variables](https://app.gitbook.com/o/PyrZEoN03Skr7eqKxVll/s/g7JDa4YuWhZbF9rXG784/~/changes/19/system-components/server/configuration#environment-variables)
+All config properties can be overridden by environment variables. Please see [Environment Variables](https://van-niekerk.gitbook.io/guardlight/system-components/server/configuration#environment-variables)
 {% endhint %}
 
 ## General Configuration
@@ -23,7 +23,7 @@ data:
 Guardlight allows for extra parsers to be added to extend it's parsing functionality.
 
 {% hint style="info" %}
-For a more detailed guided on how extending Guardlight works. Please see [Extending Parsers](../../getting-started/extending-guardlight.md#adding-parsers-example).
+For a more detailed guided on how extending Guardlight works. Please see [Extending Parsers](https://van-niekerk.gitbook.io/guardlight/getting-started/extending-guardlight#adding-parsers-example).
 {% endhint %}
 
 Adding more parsers can be done via the `parsers` config section with the following config.
@@ -54,7 +54,7 @@ The `text` and `result` parser topic names are reserved and cannot be used or ov
 Guardlight allows for extra parsers to be added to extend it's parsing functionality.
 
 {% hint style="info" %}
-For a more detailed guided on how extending Guardlight works. Please see [Extending Analyzers](../../getting-started/extending-guardlight.md#adding-analyzers-example).
+For a more detailed guided on how extending Guardlight works. Please see [Extending Analyzers](https://van-niekerk.gitbook.io/guardlight/getting-started/extending-guardlight#adding-analyzers-example).
 {% endhint %}
 
 Adding more analyzers can be done via the `analyzers` config section with the following config.

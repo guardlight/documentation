@@ -25,11 +25,11 @@ You can add a new parser to the parsers group, such as `parsers.docx` .
 The parser will then consume the .docx data (binary data) and converts it into a utf-8 text format and place it back onto the `parsers.result` topic.
 
 {% hint style="info" %}
-For a detailed explanation on the contract between a parser and Guardlight. Please see [Parser Contract](../system-components/parsers.md#parser-contract).
+For a detailed explanation on the contract between a parser and Guardlight. Please see [Parser Contract](https://van-niekerk.gitbook.io/guardlight/system-components/parsers#parser-contract).
 {% endhint %}
 
 {% hint style="info" %}
-For a detailed explanation on adding a new parser to the config. Please see [Parser Config](../system-components/server/configuration.md#parser-config).
+For a detailed explanation on adding a new parser to the config. Please see [Parser Config](https://van-niekerk.gitbook.io/guardlight/system-components/server/configuration#parser-config).
 {% endhint %}
 
 ### Adding Analyzers Example
@@ -41,10 +41,10 @@ You can add a new analyzer to the analyzers group, such as `analyzers.super-ai` 
 The analyzer will then consume the data section and analyze it and then place the results back onto the `analyzers.result` topic.
 
 {% hint style="info" %}
-For a detailed explanation on the contract between an analyzer and Guardlight. Please see [Analyzer Contract](../system-components/analyzers.md#analyzer-contract).
+For a detailed explanation on the contract between an analyzer and Guardlight. Please see [Analyzer Contract](https://van-niekerk.gitbook.io/guardlight/system-components/analyzers#analyzer-contract).
 {% endhint %}
 
 {% hint style="info" %}
-For a detailed explanation on adding a new analyzer to the config. Please see [Analyzer Config](../system-components/server/configuration.md#analyzer-config).
+For a detailed explanation on adding a new analyzer to the config. Please see [Analyzer Config](https://van-niekerk.gitbook.io/guardlight/system-components/server/configuration#analyzer-config).
 {% endhint %}
 
