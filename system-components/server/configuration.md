@@ -87,7 +87,9 @@ analyzers:
           description: Words in this list will immediatly flag the content.
           type: textarea
       output:
-        type: list<string> # Actual content
+        type: stringlist # Will return a list of strings.
+        content: List<string> # Actual content of results.
+        summary_description: string # fill with the result summary.
         description: The following words where detected.
     - type: sentiment_analysis
       name: Sentiment Analyzer
