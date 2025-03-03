@@ -12,6 +12,7 @@
 ## User Interface
 
 * [Analysis Record Request](user-interface/analysis-record-request.md)
+* [Wireframes](user-interface/wireframes.md)
 
 ## Getting started
 
