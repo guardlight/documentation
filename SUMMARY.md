@@ -14,7 +14,7 @@
 
 * [Analysis Record Request](user-interface/analysis-record-request.md)
 * [Theme Configuration Screen](user-interface/theme-configuration-screen.md)
-* [Wireframes](user-interface/wireframes.md)
+* [UI Concept](user-interface/ui-concept.md)
 
 ## Getting started
 
