@@ -10,7 +10,7 @@ The contract is the data structure that will be common between Guardlight and an
 
 ### Input Contract
 
-<table><thead><tr><th width="155">Property</th><th>Description</th></tr></thead><tbody><tr><td>data</td><td>The content that needs to be analyzed.</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="155">Property</th><th>Description</th></tr></thead><tbody><tr><td>data</td><td>The content that needs to be analyzed.</td></tr><tr><td>inputs</td><td>Key|Value list of defined inputs</td></tr><tr><td></td><td></td></tr></tbody></table>
 
 ### Output Contract
 
