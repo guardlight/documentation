@@ -57,15 +57,7 @@ When adding analyzers via the config, the analyzers will also become available f
 
 #### Input Config Explanation
 
-<table><thead><tr><th width="166.5">Property</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>Name of the input which will be the heading in the UI.</td></tr><tr><td>description</td><td>A useful description show under the heading in the UI</td></tr><tr><td>type</td><td>The input required from the user. Can be textarea, textfield.</td></tr><tr><td>data</td><td>This is always a data string</td></tr></tbody></table>
-
-#### Output Config Explanation
-
-<table><thead><tr><th width="178">Property</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>Defines how the results will be published. Can be list&#x3C;string>, ...</td></tr><tr><td>description</td><td>A helpful description shown to the UI when viewing the report.</td></tr></tbody></table>
-
-#### Detail Config Eplanation
-
-<table><thead><tr><th width="179">Property</th><th>Description</th></tr></thead><tbody><tr><td>score</td><td>The score for each specific content item</td></tr><tr><td>content</td><td>The content that was flagged</td></tr></tbody></table>
+<table><thead><tr><th width="166.5">Property</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>Name of the input which will be the heading in the UI.</td></tr><tr><td>description</td><td>A useful description show under the heading in the UI</td></tr><tr><td>type</td><td>The input required from the user. Can be textarea, textfield.</td></tr></tbody></table>
 
 #### Configuration
 
@@ -82,12 +74,6 @@ analyzers:
         - name: Strict Words
           description: Words in this list will immediatly flag the content.
           type: textarea
-          data: string # Mandatory required field
-      output:
-        score: number # Mandatory required field
-        type: stringlist # Will return a list of strings.
-        content: List<string> # Actual content of results.
-        description: The following words where detected.
     - type: sentiment_analysis
       name: Sentiment Analyzer
       description: Uses the predefined word or phrase list to determine the sentiment of each word/phrase
@@ -98,11 +84,6 @@ analyzers:
           description: These words/phrases will be used to scan the text and a score (between -1 and 1) will be determined for each. 
           type: textarea
           data: string # Mandatory required field
-      output:
-        score: number # Mandatory required field
-        type: stringlist # Will return a list of strings. Also, detaillist
-        content: List<string> # Actual content of results. Also List<Detail>
-        description: The phrases matches.
 ```
 
 {% hint style="warning" %}
