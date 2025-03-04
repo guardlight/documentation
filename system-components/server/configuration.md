@@ -63,11 +63,11 @@ When adding analyzers via the config, the analyzers will also become available f
 
 #### Config Explanation
 
-<table><thead><tr><th width="164">Property</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>The type and also the topic name for this analyzer.</td></tr><tr><td>name</td><td>Name for the analyzer show in the UI.</td></tr><tr><td>description</td><td>Description show in the UI.</td></tr><tr><td>inputs</td><td>List of objects for defining the input the analyzer requires from the User. This is an extension of the base analyzer input contract.</td></tr><tr><td>output</td><td>An object that the analyzer will give back to the server. This is an extension of the base analyzer result contract.</td></tr></tbody></table>
+<table><thead><tr><th width="186">Property</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>The type and also the topic name for this analyzer.</td></tr><tr><td>name</td><td>Name for the analyzer show in the UI.</td></tr><tr><td>description</td><td>Description show in the UI.</td></tr><tr><td>context_window</td><td>The content/text size that will be given to the analyzer for analysis.</td></tr><tr><td>model</td><td>The model that is used when chunking text. Ensures that the correct context_window length is used for chunking. 'text' is for non-AI models.</td></tr><tr><td>inputs</td><td>List of objects for defining the input the analyzer requires from the User. This is an extension of the base analyzer input contract.</td></tr><tr><td>output</td><td>An object that the analyzer will give back to the server. This is an extension of the base analyzer result contract.</td></tr></tbody></table>
 
 #### Input Config Explanation
 
-<table><thead><tr><th width="166.5">Property</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>Name of the input which will be the heading in the UI.</td></tr><tr><td>description</td><td>A useful description show under the heading in the UI</td></tr><tr><td>type</td><td>The input required from the user. Can be textarea, textfield.</td></tr></tbody></table>
+<table><thead><tr><th width="166.5">Property</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>Name of the input which will be the heading in the UI.</td></tr><tr><td>description</td><td>A useful description show under the heading in the UI</td></tr><tr><td>type</td><td>The input required from the user. Can be textarea, textfield.</td></tr><tr><td>data</td><td>This is always a data string</td></tr></tbody></table>
 
 #### Output Config Explanation
 
@@ -82,24 +82,32 @@ analyzers:
     - type: word_search
       name: Word Search Analyzer
       description: Uses a basic word list to scan content for.
+      context_window: 16000
+      model: text
       inputs:
         - name: Strict Words
           description: Words in this list will immediatly flag the content.
           type: textarea
+          data: string # Mandatory required field
       output:
+        score: number # Mandatory required field
         type: stringlist # Will return a list of strings.
         content: List<string> # Actual content of results.
-        summary_description: string # fill with the result summary.
         description: The following words where detected.
     - type: sentiment_analysis
       name: Sentiment Analyzer
       description: Uses the predefined word or phrase list to determine the sentiment of each word/phrase
+      context_window: 8000
+      model: text
       inputs:
         - name: Contextual Words
           description: These words/phrases will be used to scan the text and a score (between -1 and 1) will be determined for each. 
           type: textarea
+          data: string # Mandatory required field
       output:
-        type: list<string>
+        score: number # Mandatory required field
+        type: stringlist # Will return a list of strings.
+        content: List<string> # Actual content of results.
         description: The phrases matches.
 ```
 
