@@ -14,14 +14,13 @@ The contract is the data structure that will be common between Guardlight and an
 
 ### Output Contract
 
-<table><thead><tr><th width="158">Property</th><th>Description</th></tr></thead><tbody><tr><td>score</td><td>The total score for the analysis.</td></tr><tr><td>type</td><td>How the analysis results will be structured. [stringlist, detaillist]</td></tr><tr><td>content</td><td>The results of the analysis. Adhering to [Type]</td></tr><tr><td>description</td><td>A description of the analysis. Can be static or a summary.</td></tr></tbody></table>
+<table><thead><tr><th width="158">Property</th><th>Description</th></tr></thead><tbody><tr><td>score</td><td>The total score for the analysis.</td></tr><tr><td>type</td><td>How the analysis results will be structured. [detailed]</td></tr><tr><td>content</td><td>The results of the analysis. Adhering to [Type]</td></tr><tr><td>description</td><td>A description of the analysis. Can be static or a summary.</td></tr></tbody></table>
 
 #### Output Type
 
-* **stringlist —** A basic list of strings.&#x20;
-* **detaillist —** A detailed list of strings. Each list item have detailed analysis results. The details can be shown in the UI.&#x20;
+* **detailed —** A detailed list of strings. Each list item have detailed analysis results. The details can be shown in the UI.&#x20;
 
-### Detaillist
+### Detailed
 
 <table><thead><tr><th width="162">Property</th><th>Description</th></tr></thead><tbody><tr><td>score</td><td>The score per list item</td></tr><tr><td>content</td><td>The analysis result content per item</td></tr></tbody></table>
 
