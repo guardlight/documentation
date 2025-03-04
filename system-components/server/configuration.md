@@ -63,6 +63,10 @@ When adding analyzers via the config, the analyzers will also become available f
 
 <table><thead><tr><th width="178">Property</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>Defines how the results will be published. Can be list&#x3C;string>, ...</td></tr><tr><td>description</td><td>A helpful description shown to the UI when viewing the report.</td></tr></tbody></table>
 
+#### Detail Config Eplanation
+
+<table><thead><tr><th width="179">Property</th><th>Description</th></tr></thead><tbody><tr><td>score</td><td>The score for each specific content item</td></tr><tr><td>content</td><td>The content that was flagged</td></tr></tbody></table>
+
 #### Configuration
 
 Below is an example of the default analyzer config
@@ -96,8 +100,8 @@ analyzers:
           data: string # Mandatory required field
       output:
         score: number # Mandatory required field
-        type: stringlist # Will return a list of strings.
-        content: List<string> # Actual content of results.
+        type: stringlist # Will return a list of strings. Also, detaillist
+        content: List<string> # Actual content of results. Also List<Detail>
         description: The phrases matches.
 ```
 
