@@ -53,7 +53,7 @@ When adding analyzers via the config, the analyzers will also become available f
 
 #### Config Explanation
 
-<table><thead><tr><th width="186">Property</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>The type and also the topic name for this analyzer.</td></tr><tr><td>name</td><td>Name for the analyzer show in the UI.</td></tr><tr><td>description</td><td>Description show in the UI.</td></tr><tr><td>context_window</td><td>The content/text size that will be given to the analyzer for analysis.</td></tr><tr><td>model</td><td>The model that is used when chunking text. Ensures that the correct context_window length is used for chunking. 'text' is for non-AI models.</td></tr><tr><td>inputs</td><td>List of objects for defining the input the analyzer requires from the User. This is an extension of the base analyzer input contract.</td></tr><tr><td>output</td><td>An object that the analyzer will give back to the server. This is an extension of the base analyzer result contract.</td></tr></tbody></table>
+<table><thead><tr><th width="186">Property</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>The type and also the topic name for this analyzer.</td></tr><tr><td>name</td><td>Name for the analyzer show in the UI.</td></tr><tr><td>description</td><td>Description show in the UI.</td></tr><tr><td>context_window</td><td>The content/text size that will be given to the analyzer for analysis.</td></tr><tr><td>model</td><td>The model that is used when chunking text. Ensures that the correct context_window length is used for chunking. 'text' is for non-AI models.</td></tr><tr><td>inputs</td><td>List of objects for defining the input the analyzer requires from the User. This is an extension of the base analyzer input contract.</td></tr><tr><td>output</td><td>An object that the analyzer will give back to the server. This is an extension of the base analyzer result contract.</td></tr><tr><td>concurrency</td><td>The max amount of analyzers that can be scheduled.</td></tr></tbody></table>
 
 #### Input Config Explanation
 
@@ -70,6 +70,7 @@ analyzers:
       description: Uses a basic word list to scan content for.
       context_window: 16000
       model: text
+      concurrency: 4
       inputs:
         - key: strict_words
           name: Strict Words
@@ -80,6 +81,7 @@ analyzers:
       description: Uses the predefined word or phrase list to determine the sentiment of each word/phrase
       context_window: 8000
       model: text
+      concurrency: 4
       inputs:
         - key: contextual_words
           name: Contextual Words
