@@ -6,17 +6,7 @@ All config properties can be overridden by environment variables. Please see [En
 
 ## General Configuration
 
-### Data Content Size
 
-Data that needs analysis can be very large. The data/text is divided into a specific chunks/sections sizes so that the analysis can be efficient and precise and allows the analyzers to run on less powerful machines.
-
-Some users may have much more powerful machines, and can use a bigger content size. The following config property allows that content size to be changed.
-
-```yaml
-data:
-    content:
-        size: 2000
-```
 
 ## Parser config
 
