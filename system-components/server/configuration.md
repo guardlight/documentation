@@ -57,7 +57,7 @@ When adding analyzers via the config, the analyzers will also become available f
 
 #### Input Config Explanation
 
-<table><thead><tr><th width="166.5">Property</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>Name of the input which will be the heading in the UI.</td></tr><tr><td>description</td><td>A useful description show under the heading in the UI</td></tr><tr><td>type</td><td>The input required from the user. Can be textarea, textfield.</td></tr></tbody></table>
+<table><thead><tr><th width="166.5">Property</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>Unique name for input</td></tr><tr><td>name</td><td>Name of the input which will be the heading in the UI.</td></tr><tr><td>description</td><td>A useful description show under the heading in the UI</td></tr><tr><td>type</td><td>The input required from the user. Can be textarea, textfield.</td></tr></tbody></table>
 
 #### Configuration
 
@@ -71,7 +71,8 @@ analyzers:
       context_window: 16000
       model: text
       inputs:
-        - name: Strict Words
+        - id: strict_words
+          name: Strict Words
           description: Words in this list will immediatly flag the content.
           type: textarea
     - type: sentiment_analysis
@@ -80,7 +81,8 @@ analyzers:
       context_window: 8000
       model: text
       inputs:
-        - name: Contextual Words
+        - id: contextual_words
+          name: Contextual Words
           description: These words/phrases will be used to scan the text and a score (between -1 and 1) will be determined for each. 
           type: textarea
           data: string # Mandatory required field
