@@ -1,8 +1,8 @@
-# Job Queuing
+# Job Scheduling
 
 ## Overview
 
-Guardlight uses job queuing to schedule different jobs such as parsing, analysis, etc.
+Guardlight uses job scheduling to schedule different jobs such as parsing, analysis, etc.
 
 
 
