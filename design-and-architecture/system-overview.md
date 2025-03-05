@@ -24,7 +24,7 @@ Guardlight is based on a modular design that can be extended and adapted to a sp
 
 ### Advanced Diagram
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="System High Overview Concept" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="System High Overview Concept" class="gitbook-drawing">
 
 #### For an over-complication explanation:
 
