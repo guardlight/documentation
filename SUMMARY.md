@@ -26,6 +26,7 @@
 * [Server](system-components/server/README.md)
   * [Configuration](system-components/server/configuration.md)
   * [NATS Jetstream](system-components/server/nats-jetstream.md)
+  * [Job Queuing](system-components/server/job-queuing.md)
 * [UI](system-components/ui.md)
 * [Parsers](system-components/parsers.md)
 * [Analyzers](system-components/analyzers.md)
