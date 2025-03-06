@@ -10,11 +10,11 @@ The contract is the data structure that will be common between Guardlight and an
 
 ### Input Contract
 
-<table><thead><tr><th width="190">Property</th><th>Description</th></tr></thead><tbody><tr><td>jobId</td><td>ID of job.</td></tr><tr><td>analysisRequestId</td><td>Referencing analysis request ID.</td></tr><tr><td>key</td><td>The name of the analyzer.</td></tr><tr><td>analysisId</td><td>Referencing the analysis ID.</td></tr><tr><td>content</td><td>The content that needs to be analyzed.</td></tr><tr><td>inputs</td><td>Key|Value list of defined inputs</td></tr></tbody></table>
+<table><thead><tr><th width="190">Property</th><th>Description</th></tr></thead><tbody><tr><td>jobId</td><td>ID of job.</td></tr><tr><td>analysisId</td><td>Referencing the analysis ID.</td></tr><tr><td>content</td><td>The content that needs to be analyzed.</td></tr><tr><td>inputs</td><td>Key|Value list of defined inputs</td></tr></tbody></table>
 
 ### Output Contract
 
-<table><thead><tr><th width="158">Property</th><th>Description</th></tr></thead><tbody><tr><td>score</td><td>The total score for the analysis.</td></tr><tr><td>type</td><td>How the analysis results will be structured. [detailed]</td></tr><tr><td>content</td><td>The results of the analysis. Adhering to [Type]</td></tr><tr><td>description</td><td>A description of the analysis. Can be static or a summary.</td></tr></tbody></table>
+<table><thead><tr><th width="197">Property</th><th>Description</th></tr></thead><tbody><tr><td>jobId</td><td>ID of job — from input.</td></tr><tr><td>analysisId</td><td>Referencing the analysis ID — from input.</td></tr><tr><td>score</td><td>The total score for the analysis.</td></tr><tr><td>type</td><td>How the analysis results will be structured. [detailed]</td></tr><tr><td>content</td><td>The results of the analysis. Adhering to [Type]</td></tr><tr><td>description</td><td>A description of the analysis. Can be static or a summary.</td></tr></tbody></table>
 
 #### Output Type
 
