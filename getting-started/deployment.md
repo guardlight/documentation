@@ -31,7 +31,7 @@ services:
             - GUARDLIGHT_DATABASE_USER=guardlight
             - GUARDLIGHT_DATABASE_PASSWORD=securePassword
             - GUARDLIGHT_DATABASE_NAME=guardlight
-            - GUARDLIGHT_DATABASE_SERVER=<DATABASE_IP>
+            - GUARDLIGHT_DATABASE_SERVER=database # Docker Compose Internal IP
             - GUARDLIGHT_DATABASE_PORT=5432
 
         depends_on:
