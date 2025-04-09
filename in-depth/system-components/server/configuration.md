@@ -32,6 +32,7 @@ parsers:
     - type: epub
       name: EPUB Parses
       description: Parses epub files to utf-8 standard text
+      external: false
 ```
 {% endcode %}
 
@@ -71,6 +72,7 @@ analyzers:
       context_window: 16000
       model: text
       concurrency: 4
+      external: false
       inputs:
         - key: strict_words
           name: Strict Words
@@ -82,6 +84,7 @@ analyzers:
       context_window: 8000
       model: text
       concurrency: 4
+      external: false
       inputs:
         - key: contextual_words
           name: Contextual Words
